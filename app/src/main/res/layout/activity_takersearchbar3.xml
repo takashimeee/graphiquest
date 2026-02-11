@@ -1,0 +1,278 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:weightSum="5"
+    android:background="#F3F3F3"
+    android:padding="0dp">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:contentDescription="GraphiQuest logo"
+        android:src="@drawable/graphq" />
+
+    <ImageView
+        android:id="@+id/btnback"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="155dp"
+        android:src="@drawable/backarrow"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profilemsgtab" />
+
+    <TextView
+        android:id="@+id/nameText"
+        android:text="Kendrick Lamar"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppinsblack"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/status"
+        android:text="Status: Looking for a QuestGiver"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppinslight"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnmessagee"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/grey"
+            android:fontFamily="@font/poppins_extrabold"
+            android:padding="1dp"
+            android:text="Message"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnsendreq"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/grey"
+            android:fontFamily="@font/poppins_extrabold"
+            android:padding="1dp"
+            android:text="Request!"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/roleText"
+        android:text="QuestGiver"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppinslight"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/questText"
+        android:text="Total Quest Given: 10"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/poppinslight"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="1dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/ratingText"
+        android:text="Current Rating: ★★★★☆ 4.0"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/poppins_extrabold"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="2dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Looking for a QuestTaker!"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppinsblack"/>
+
+
+    <FrameLayout
+        android:layout_width="320dp"
+        android:layout_height="190dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/tut"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/tut2" />
+
+        <ImageView
+            android:id="@+id/cubeImage"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+           android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:contentDescription="web design"
+            android:src="@drawable/coding" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fix &amp; check Code malfunction"
+            android:fontFamily="@font/poppins_extrabold"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="13dp"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rank Needed: Master"
+            android:fontFamily="@font/poppinsblack"
+            android:textColor="@color/black"
+            android:textSize="11dp"
+            android:layout_marginTop="35dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Difficulty: A++"
+            android:fontFamily="@font/poppinsblack"
+            android:textColor="@color/black"
+            android:textSize="13dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="55dp"/>
+
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/msgnpostbtn"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="305dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/msgnpostbtn">
+        <ImageView
+            android:id="@+id/messagebtn1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="-0dp"
+            android:layout_gravity="center"
+            android:background="@drawable/messagetab"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <ImageView
+            android:id="@+id/msgbtn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/chattab"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/menutab"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#D9D9D9"
+        android:layout_gravity="bottom">
+
+        <ImageView
+            android:id="@+id/homebutton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/homebutton"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <ImageView
+            android:id="@+id/leaderboardbutton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/trophybutton"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="105dp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <ImageView
+            android:id="@+id/searchbutton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/searchbutton"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="185dp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <ImageView
+            android:id="@+id/taskboardbutton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/taskboardbutton"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="270dp"/>
+
+        <ImageView
+            android:id="@+id/profilebutton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/profilebutton"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="345dp"
+            android:clickable="true"
+            android:focusable="true"/>
+    </FrameLayout>
+    <!--    end of the selection-->
+
+
+</LinearLayout>

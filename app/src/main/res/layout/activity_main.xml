@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#FFFFFF"
+    android:paddingTop="48dp">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/grapquest"
+        android:contentDescription="@string/app_name"
+        android:layout_marginBottom="32dp"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/curve1"
+        android:background="@drawable/curve1hpg"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_marginBottom="16dp"
+        android:elevation="8dp">
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinslight"
+            android:hint="Email or Phone Number"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Password"
+            android:fontFamily="@font/poppinslight"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Login"
+            android:fontFamily="@font/poppinsblack"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#000000"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:fontFamily="@font/poppinslight"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground"/>
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:text="Create new account"
+        android:fontFamily="@font/poppinsblack"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#000000"/>
+
+</LinearLayout>

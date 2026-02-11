@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Before we finish"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_extrabold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="24dp"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp">
+
+
+        <CheckBox
+            android:id="@+id/btncheckbox"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="We want to you acknowledge that this app is still in development and is not fully complete. Every data that you give will be safe in our hands and this project is only for school purposes and we hope you can give as much feedback as you can to aid in the development of our small project."
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppinslight"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="3dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btnAgree"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="Agree and Start!"
+        android:fontFamily="@font/poppinsblack"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#000000"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="Back"
+        android:fontFamily="@font/poppinsblack"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#000000" />
+
+</LinearLayout>

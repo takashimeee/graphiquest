@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".InsideMessage">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#66A3FF"/>
+
+        <ImageView
+            android:id="@+id/backtomsgtab"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/backarrow"/>
+
+<!--        end of backtab in inside message-->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profilemsgtab"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lebron James"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinsblack"
+        android:textSize="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="125dp"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/profilemsgtab"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="10dp"/>
+<!--    end of profile picture-->
+
+
+    <FrameLayout
+        android:layout_width="280dp"
+        android:layout_height="150dp"
+        android:background="@drawable/curveinsidemsg1"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="160dp">
+
+        <FrameLayout
+            android:layout_width="250dp"
+            android:layout_height="125dp"
+            android:layout_gravity="center"
+            android:background="@drawable/curveinsidemsg2">
+
+            <TextView
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Hello QuestGiver! im done with the quest you gave to me!. I hope you enjoy the final outcome of your task that you've given to me. And I hope you will recruit me again for another quest. Thanks!"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppinslight"
+                android:textSize="13dp"/>
+
+        </FrameLayout>
+
+    </FrameLayout>
+<!--    end of chat-->
+
+
+    <FrameLayout
+        android:layout_width="280dp"
+        android:layout_height="76dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/curveinsidemsg1">
+
+        <FrameLayout
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/curveinsidemsg2">
+
+            <TextView
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppinslight"
+                android:text="Thanks for Completing the quest QuestTaker!"
+                android:textColor="@color/black"
+                android:textSize="13dp" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+<!--    end of QuestGiver's reply-->
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/profilemsgtab"
+        android:layout_marginTop="540dp"
+        android:layout_marginLeft="10dp"/>
+
+
+
+    <FrameLayout
+        android:layout_width="280dp"
+        android:layout_height="150dp"
+        android:background="@drawable/curveinsidemsg1"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="150dp">
+
+        <FrameLayout
+            android:layout_width="250dp"
+            android:layout_height="125dp"
+            android:layout_gravity="center"
+            android:background="@drawable/curveinsidemsg2">
+
+            <TextView
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="No problem QuestGiver!. And here's the file QuestGiver"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppinslight"
+                android:textSize="10dp"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/filemsgtab"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bussiness poster Quest.png"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppinsblack"
+                android:textSize="11dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="80dp"/>
+
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+<!--    end of msg and task-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate the QuestTaker's skill:"
+        android:layout_marginTop="680dp"
+        android:layout_marginLeft="75dp"
+        android:fontFamily="@font/poppinsblack"
+        android:textColor="@color/black"
+        android:textSize="9dp"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="680dp"
+        android:numStars="5"
+        android:stepSize="0.5" />
+
+<!--    end of rating bar-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="#66A3FF">
+
+    <FrameLayout
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="55dp"
+        android:background="@drawable/curveinsidemsg2"/>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/uploadmsg"
+            android:layout_gravity="center"
+            android:layout_marginRight="155dp"/>
+
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/emoticonmsg"
+            android:layout_gravity="center"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="180dp"/>
+
+
+
+
+    </FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</FrameLayout>

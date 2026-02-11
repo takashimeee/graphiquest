@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="60dp"
+        android:contentDescription="GraphiQuest logo"
+        android:src="@drawable/graphq" />
+
+    <ImageView
+        android:id="@+id/btnback"
+        android:layout_width="49dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/backarrow" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/searchhh" />
+
+    <LinearLayout
+        android:id="@+id/searchOptionsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="110dp"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/searchPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/poppins_extrabold"
+            android:text="What type of QuestGiver you are looking for?"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="#000000"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnWebDesign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Website Design"
+        android:fontFamily="@font/poppins_extrabold"
+        android:layout_marginTop="380dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:backgroundTint="@color/grey"
+        android:textColor="@color/black"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnPv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="440dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="@color/grey"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="Product Visualization"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btnUIDesign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UI/UX Designer"
+        android:fontFamily="@font/poppins_extrabold"
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:backgroundTint="@color/grey"
+        android:textColor="@color/black"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnGameDev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="560dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="@color/grey"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="Game Developer"
+        android:textColor="@color/black" />
+
+    <FrameLayout
+        android:id="@+id/msgnpostbtn"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="305dp"
+        android:layout_marginTop="650dp"
+        android:background="@drawable/msgnpostbtn">
+
+        <FrameLayout
+            android:id="@+id/messagebtn1"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/messagetab"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/msgbtn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/chattab" />
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/menutab"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#D9D9D9"
+        android:layout_gravity="bottom">
+
+        <ImageView
+            android:id="@+id/homebutton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/homebutton"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <ImageView
+            android:id="@+id/leaderboardbutton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/trophybutton"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="105dp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <ImageView
+            android:id="@+id/searchbutton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/searchbutton"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="185dp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <ImageView
+            android:id="@+id/taskboardbutton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/taskboardbutton"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="270dp"/>
+
+        <ImageView
+            android:id="@+id/profilebutton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/profilebutton"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="345dp"
+            android:clickable="true"
+            android:focusable="true"/>
+    </FrameLayout>
+    <!--    end of the selection-->
+
+
+</FrameLayout>

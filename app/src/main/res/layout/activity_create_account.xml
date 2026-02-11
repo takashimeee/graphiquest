@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:backgroundTint="#F3F3F3"
+    android:paddingTop="40dp">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/grapquest" />
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:background="#E0E0E0"
+        android:elevation="8dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etFirst"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:background="@android:drawable/edit_text"
+                android:fontFamily="@font/poppinslight"
+                android:hint="First Name"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/etLast"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:background="@android:drawable/edit_text"
+                android:fontFamily="@font/poppinslight"
+                android:hint="Last Name"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="Birthday"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etMM"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_marginEnd="6dp"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:background="@android:drawable/edit_text"
+                android:fontFamily="@font/poppinslight"
+                android:gravity="center"
+                android:hint="mm"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/etDD"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:textColor="@color/black"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:background="@android:drawable/edit_text"
+                android:fontFamily="@font/poppinslight"
+                android:gravity="center"
+                android:hint="dd"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/etYY"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:background="@android:drawable/edit_text"
+                android:fontFamily="@font/poppinslight"
+                android:gravity="center"
+                android:hint="yy"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="Gender"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnFemale"
+                android:layout_width="2dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/poppinsblack"
+                android:text="Female"
+                android:textColor="#FFFFFF"
+                android:textSize="10dp"
+                app:backgroundTint="#000000" />
+
+            <Button
+                android:id="@+id/btnMale"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/poppinsblack"
+                android:text="Male"
+                android:textColor="#FFFFFF"
+                android:textSize="10dp"
+                app:backgroundTint="#000000" />
+
+            <Button
+                android:id="@+id/btnOthers"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/poppinsblack"
+                android:text="Others"
+                android:textColor="#FFFFFF"
+                android:textSize="10dp"
+                app:backgroundTint="#000000" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="12dp"
+            android:textColor="@color/black"
+            android:background="@android:drawable/edit_text"
+            android:fontFamily="@font/poppinslight"
+            android:hint="Mobile number or email"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@android:drawable/edit_text"
+            android:fontFamily="@font/poppinslight"
+            android:textColor="@color/black"
+            android:hint="New Password"
+            android:inputType="textPassword"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I want to use GrpahiQuest as:"
+            android:fontFamily="@font/poppinslight"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:textSize="10dp"
+            android:layout_marginLeft="5dp"/>
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radiogroupacc">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QuestGiver"
+                android:fontFamily="@font/poppinsblack"
+                android:textColor="@color/black"
+                android:id="@+id/GiverAcc"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QuestTaker"
+                android:fontFamily="@font/poppinsblack"
+                android:textColor="@color/black"
+                android:id="@+id/TakerAcc"/>
+
+
+        </RadioGroup>
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppinsblack"
+        android:text="Sign Up"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#000000" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppinsblack"
+        android:text="Cancel"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#000000" />
+
+</LinearLayout>
